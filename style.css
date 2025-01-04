@@ -15,10 +15,10 @@ a{
 }
 #logo{
     height: 100%;
-    width: 25%;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-image: url(images/background.jpg);
     background-position: center center;
@@ -72,7 +72,9 @@ p{
 #signupForm{
     background-color: hsl(34, 100%, 50%);
     height: 50%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     box-shadow: rgba(104, 104, 104, 0.726) 0px 3px 8px;
 }
@@ -80,8 +82,8 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 700px;
     gap: 20px;
 }
 .formElement{
@@ -100,8 +102,20 @@ input{
     color: black;
     border-radius: 50px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: black;
+}
+input:focus{
+    outline: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: hsl(330, 100%, 60%);
+}
+.password:invalid{
+    border-width: 2px;
+    outline: none;
+    border-color: red;     
+    border-style: solid;
 }
 #footer{
     width: 100%;
@@ -113,6 +127,7 @@ input{
     justify-content: flex-start;
     margin-top: auto;
 }
+
 button{
     width: 150;
     height: 50px;
@@ -124,8 +139,9 @@ button{
     background-color: hsl(330, 100%, 50%);
     border-style: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
     border-radius: 100px;
+    margin-bottom: 20px;
 }
 button:hover{
     background-color: hsl(330, 100%, 60%);

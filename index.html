@@ -9,14 +9,16 @@
 <body>
     <div id="container">
         <div id="logo">
-            <div id="logoText">Element < k > </k></div>
+            <div></div>
+            <div id="logoText">Element &lt;k&gt; </k></div>
+            <div id="credits">background image by: <a href="https://unsplash.com/@allecgomes">Allec Gomes</a></div>
             <!--background image by Allec Gomez-->
             <!--https://unsplash.com/@allecgomes-->
         </div>
         <div id="signup">
             <div id="header">
                 <h1>Reasons to Join:</h1>
-                    <p><span>Personal Growth:</span> The army offers opportunities for personal development, teaching discipline, leadership, and resilience.
+                    <p><span>Personal Growth:</span> We offer opportunities for personal development, teaching discipline, leadership, and resilience.
                     <p><span>Career Opportunities:</span> With a wide range of roles, we career paths in various fields such as engineering, healthcare, and communications.</p>
                     <p><span>Travel and Adventure:</span> We take you to different parts of the world, allowing you to experience diverse cultures and adventures.</p>
                 </div>
@@ -39,12 +41,12 @@
                         <input type="number" id="phoneNumber">
                     </div>
                     <div class="formElement">
-                        <label for="password">please enter a password:</label>
-                        <input type="password" id="password">
+                        <label for="password">please enter a password of min. 8 length</label>
+                        <input type="password" id="password" class="password" minlength="8" value="" required>
                     </div>
                     <div class="formElement">
                         <label for="password validation">Please validate your password</label>
-                        <input type="password" id="passwordValidation">
+                        <input type="password" id="passwordValidation" class="password" minlength="8" value="" required>
                     </div>
                 </form>
             </div>
